@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Portafolio - Esteban Zambrano & Camilo Sarria</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap 5 CDN -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top custom-nav">
+    <div class="container">
+        <a class="navbar-brand fw-bold" href="#">E&C Mecatrónica</a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="menu">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="#about">Sobre Nosotros</a></li>
+                <li class="nav-item"><a class="nav-link" href="#skills">Habilidades</a></li>
+                <li class="nav-item"><a class="nav-link" href="#projects">Proyectos</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contact">Contacto</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- HERO -->
+<header class="hero text-center text-white d-flex align-items-center">
+    <div class="container">
+        <h1 class="display-3 fw-bold">Esteban Zambrano & Camilo Sarria</h1>
+        <p class="lead">Estudiantes de Ingeniería Mecatrónica</p>
+        <a href="#projects" class="btn btn-custom mt-3">Ver Proyectos</a>
+    </div>
+</header>
+
+<!-- SOBRE NOSOTROS -->
+<section id="about" class="container py-5 text-center">
+    <h2 class="section-title">Sobre Nosotros</h2>
+    <p class="mt-4">
+        Somos estudiantes de Ingeniería Mecatrónica apasionados por la automatización,
+        la robótica, el desarrollo tecnológico y la integración de sistemas inteligentes.
+        Nuestro enfoque combina programación, electrónica y control para crear soluciones innovadoras.
+    </p>
+</section>
+
+<!-- HABILIDADES -->
+<section id="skills" class="skills-section text-white py-5">
+    <div class="container text-center">
+        <h2 class="section-title text-white">Habilidades Técnicas</h2>
+
+        <div class="row mt-5">
+            <div class="col-md-3 col-6 mb-4">
+                <i class="fas fa-robot skill-icon"></i>
+                <h5>Robótica</h5>
+                <p>Automatización y control</p>
+            </div>
+
+            <div class="col-md-3 col-6 mb-4">
+                <i class="fas fa-microchip skill-icon"></i>
+                <h5>Electrónica</h5>
+                <p>Microcontroladores</p>
+            </div>
+
+            <div class="col-md-3 col-6 mb-4">
+                <i class="fas fa-code skill-icon"></i>
+                <h5>Programación</h5>
+                <p>Python, C++, JS</p>
+            </div>
+
+            <div class="col-md-3 col-6 mb-4">
+                <i class="fas fa-drafting-compass skill-icon"></i>
+                <h5>Diseño</h5>
+                <p>CAD & Modelado</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- PROYECTOS -->
+<section id="projects" class="container py-5">
+    <h2 class="section-title text-center">Nuestros Proyectos</h2>
+
+    <div class="row mt-5 g-4">
+        <div class="col-md-4">
+            <div class="card project-card text-center">
+                <div class="card-body">
+                    <i class="fas fa-robot fa-2x mb-3"></i>
+                    <h5>Brazo Robótico</h5>
+                    <p>Sistema automatizado con control programado.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card project-card text-center">
+                <div class="card-body">
+                    <i class="fas fa-car-battery fa-2x mb-3"></i>
+                    <h5>Sistema IoT</h5>
+                    <p>Monitoreo remoto con sensores inteligentes.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card project-card text-center">
+                <div class="card-body">
+                    <i class="fas fa-cogs fa-2x mb-3"></i>
+                    <h5>Automatización Industrial</h5>
+                    <p>Integración de PLC y control lógico.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CONTACTO -->
+<section id="contact" class="contact-section py-5">
+    <div class="container text-center">
+        <h2 class="section-title text-white">Contacto</h2>
+
+        <form id="contactForm" class="col-md-6 mx-auto mt-4">
+            <input type="text" id="nombre" class="form-control mb-3" placeholder="Nombre" required>
+            <input type="email" id="email" class="form-control mb-3" placeholder="Correo" required>
+            <textarea class="form-control mb-3" rows="4" placeholder="Mensaje"></textarea>
+            <button type="submit" class="btn btn-custom w-100">Enviar</button>
+        </form>
+    </div>
+</section>
+
+<footer class="footer text-center text-white p-3">
+    © 2026 Esteban Zambrano & Camilo Sarria - Ingeniería Mecatrónica
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
